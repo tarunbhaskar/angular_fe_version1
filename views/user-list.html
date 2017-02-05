@@ -1,0 +1,35 @@
+<ul class="nav nav-pills">
+  <li class="user-header">Users</li>
+  <li ng-click= "mainVM.addUser('/addUser')" style="float:right"><button class="btn btn-default">+Add User</button></li>
+  
+</ul>
+
+<input type="search" ng-model="mainVM.searchText" placeholder="Search" class="form-control searchInput" />
+
+<table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Image</th>
+                <th>Name</th>
+                <th>City</th>
+                <th>State</th>
+                
+                <th>Delete User</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr ng-repeat="user1 in mainVM.user | filter:mainVM.searchText | orderBy: 'address.city'"  >
+              <td><img ng-src="{{user1.profilePic}}" class=" circle" ng-click= "mainVM.showUserDetail($index)"></td>
+                <td>{{user1.firstName}}</td>
+                <td>{{user1.address.city}}</td>
+                <td>{{user1.address.state}}</td>
+                
+                <td><i  ng-click="mainVM.deleteUser($index)" class="glyphicon glyphicon-remove delete"></i></td>
+              </tr>
+
+
+            </tbody>
+
+
+
+          </table>

@@ -1,0 +1,24 @@
+<ul class="nav nav-pills">
+  <li class="user-header">User Details</li>
+  <li ng-click = "displayVm.goBack('/user')" class="back"><button class="btn btn-default">Back</button></li>
+  
+</ul>
+
+<div class="row user-detail">
+  <div  class="col-md-6">
+  	
+  	<h3>Name</h3>
+  	<p>{{displayVm.userDet.firstName}}</p>
+  		<h3>Email</h3>
+  		<p>{{displayVm.userDet.email}}</p>
+  			<h3>Address</h3>
+  			<p>{{displayVm.userDet.address.city}} , {{displayVm.userDet.address.state}}</p>
+  				<h3>Company</h3>
+  				<p>{{displayVm.userDet.company.name}}</p>
+
+  </div>
+  <div class="col-md-6">
+  	<h3>Image</h3>
+  	<img class="profile-image" ng-src="{{displayVm.userDet.profilePic}}">
+  </div>
+</div>

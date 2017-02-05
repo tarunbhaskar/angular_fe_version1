@@ -1,0 +1,48 @@
+section{
+  min-height:400px;
+}
+
+.image-size{
+	width: 40px;
+    margin-top: -10px;
+}
+
+.hamgburger-menu{
+	float: right;
+    margin-top: 18px;
+}
+
+.circle {
+	border-radius: 50%;
+	width: 50px;
+	height: 50px; 
+	cursor:pointer;
+}
+
+.error p{
+	color:red;
+}
+
+.user-header{
+	font-size:25px;
+}
+
+.searchInput{
+	width:50% !important; margin-left:10px;
+}
+
+.user-detail{
+	margin-left:15px;
+}
+
+.profile-image{
+	width:75%; height:75%;
+}
+
+.back{
+	float:right !important;
+}
+
+.delete{
+	cursor:pointer;
+}

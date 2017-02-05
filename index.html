@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html ng-app="plunker">
+
+<head>
+  <meta charset="utf-8" />
+  <title>AngularJS Plunker</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+</head>
+
+<body>
+
+  <header>
+ <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" >
+        <img alt="Brand" class="image-size" src="https://egen.solutions/images/egen-logo.png">
+      </a>
+    </div>
+    <i class="glyphicon glyphicon-menu-hamburger hamgburger-menu"></i>
+  </div>
+</nav>
+  </header>
+  
+ <section ng-view>
+   
+ </section>
+  
+  <footer>
+   
+  </footer>
+
+    <script src="https://code.angularjs.org/1.3.15/angular.js"></script>
+  <script src="https://code.angularjs.org/1.3.15/angular-route.min.js"></script>
+  <script src="https://code.angularjs.org/1.3.15/angular-messages.js"></script>
+   
+  <script src="app.js"></script>
+  <script src="controllers/AddUser.controller.js"></script>
+  <script src="controllers/User.controller.js"></script>
+  <script src="controllers/DisplayUser.controller.js"></script>
+  <script src="services/data.service.js"></script>
+   <script src="services/shared.service.js"></script>
+</body>
+
+</html>
